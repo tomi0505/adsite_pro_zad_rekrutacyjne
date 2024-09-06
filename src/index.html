@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+    rel="stylesheet">
+
+  <title>CarsSpot</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">
+        <a href="/" class="flex items-center logo">
+          <span class="text-blue-600">Cars</span>Spot
+        </a>
+      </h1>
+      <nav class="hidden md:flex space-x-6 mx-auto">
+        <a href="#">Galeria zdjęć</a>
+        <a href="#">FAQ</a>
+      </nav>
+      <a href="#" class="bg-blue-700 hover:bg-blue-600 text-white py-3 px-5 rounded-lg ml-7 md:ml-0 mr-7 md:mr-0 font-semibold">Zadzwoń do nas</a>
+      <button id="hamburger" class="md:hidden text-gray-600 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden bg-white hidden text-center">
+      <a href="#" class="block py-2 px-4">Galeria zdjęć</a>
+      <a href="#" class="block py-2 px-4">FAQ</a>
+    </div>
+    <div class="container mx-auto px-4 py-4 lg:pt-24 lg:pb-64">
+      <h2 class="text-7xl	bebas-neue-regular">Sprzedajemy samochody <br class="hidden lg:inline">z europy</h2>
+      <h3 class="roboto-condensed mt-7 mb-10">Kup komfortowy pojazd, aby każda podróż <br class="hidden lg:inline">była wyjątkowym przeżyciem.</h3>
+      <img src="images/img-1.jpg" class="mb-5 md:hidden" alt="car 1">
+      <a href="#" class="border border-blue-600 bg-blue-700 hover:bg-blue-600 text-white py-3 px-5 rounded-lg mb-3 md:mb-0 md:mr-4 font-semibold block md:inline-block">Zobacz zdjęcia</a>
+      <a href="#" class="border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white py-3 px-5 rounded-lg block md:inline-block">Zadzwoń do nas</a>
+    </div>
+  </header>
+</body>
+
+</html>
