@@ -10,6 +10,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css">
+
     <script src="https://cdn.tailwindcss.com"></script>
   <title>CarsSpot</title>
 </head>
@@ -46,22 +48,27 @@
     </div>
   </header>
 
-  <div class="container mx-auto px-4 py-4 lg:pt-24 lg:pb-64">
+  <div class="container mx-auto px-4 py-4 lg:py-32">
     <h5 class="roboto-condensed mb-2 text-blue-600 text-xl">Prezentacja firmy</h5>
     <h3 class="text-4xl	bebas-neue-regular">Zobacz naszą Galerię zdjęć</h3>
     
 
-    <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-400">
-      <li class="me-2">
-          <a href="#" class="inline-block px-4 py-3 text-white bg-blue-600 rounded-lg active" aria-current="page">Tab 1</a>
-      </li>
-      <li class="me-2">
-          <a href="#"  class="inline-block px-4 py-3 rounded-lg hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-white">Tab 2</a>
-      </li>
-    </ul>
+    <div id="tabs" class="bg-transparent mt-6">
+      <ul class="bg-transparent border-0">
+        <li><a href="#tabs-1" class="bg-white text-black">Samochody osobowe</a></li>
+        <li><a href="#tabs-2" class="bg-white text-black">Samochody dostawcze</a></li>
+      </ul>
+      <div id="tabs-1" class="tab-item">
+        <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+      </div>
+      <div id="tabs-2" class="tab-item">
+        <p>Tutaj można wstawić drugi slider, ale nie będę już kopiował.</p>
+      </div>
+    </div>
 
   </div>
-  
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
 </body>
 
 </html>

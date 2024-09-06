@@ -2,24 +2,13 @@
 // @tailwind components;
 // @tailwind utilities;
 @import 'variables';
-
-.bebas-neue-regular {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.roboto-condensed {
-  font-family: "Roboto Condensed", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
+@import 'helpers';
 
 body {
   font-family: "Roboto Flex", sans-serif;
   font-size: 16px;
   color: $black;
-  background-color: cadetblue;
+  // background-color: cadetblue;
 }
 
 .header {
@@ -40,3 +29,51 @@ body {
     margin-right: 7px;
   }
 }
+
+// jQuery UI start
+#tabs {
+  padding: 0;
+  border: none;
+
+  li {
+    margin-right: 40px;
+    border: 0;
+  }
+
+  .ui-tabs,
+  .ui-tabs-nav,
+  .ui-tabs-anchor {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .ui-state-active {
+    a {
+      padding-left: 0;
+      padding-right: 0;
+      color: $pr-color;
+      font-weight: 600;
+    }
+
+    a:link {
+      padding-left: 0;
+      padding-right: 0;
+      color: $pr-color;
+      font-weight: 600;
+    }
+
+    a:visited {
+      padding-left: 0;
+      padding-right: 0;
+      color: $pr-color;
+      font-weight: 600;
+    }
+  }
+
+  .tab-item {
+    margin-top: 70px;
+    padding: 0;
+  }
+}
+
+// jQuery UI end

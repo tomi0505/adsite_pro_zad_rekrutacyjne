@@ -7,4 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
   hamburger.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
   });
+
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
 });
