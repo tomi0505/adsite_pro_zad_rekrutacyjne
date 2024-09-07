@@ -71,9 +71,37 @@ body {
   }
 
   .tab-item {
-    margin-top: 70px;
+    margin-top: 20px;
     padding: 0;
+
+    @media (min-width: 768px) {
+      margin-top: 70px;
+    }
   }
 }
 
 // jQuery UI end
+.slider-1 {
+  &__img {
+    margin-bottom: 30px;
+  }
+
+  .slick-dots {
+    li {
+      button {
+        &::before {
+          font-size: 8px;
+        }
+      }
+
+      &.slick-active {
+        button {
+          &::before {
+            font-size: 8px;
+            color: $pr-color;
+          }
+        }
+      }
+    }
+  }
+}
