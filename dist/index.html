@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>CarsSpot</title>
+<link rel="icon" href="favicon.ico"><script defer src="js/app.js"></script><link href="css/app.css" rel="stylesheet"></head>
+
+<body>
+  <header class="overflow-hidden header">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">
+        <a href="/" class="flex items-center logo">
+          <span class="text-blue-600">Cars</span>Spot
+        </a>
+      </h1>
+      <nav class="hidden md:flex space-x-6 mx-auto">
+        <a href="#">Galeria zdjęć</a>
+        <a href="#">FAQ</a>
+      </nav>
+      <a href="#" class="bg-blue-700 hover:bg-blue-600 text-white py-3 px-5 rounded-lg ml-7 md:ml-0 mr-7 md:mr-0 font-semibold">Zadzwoń do nas</a>
+      <button id="hamburger" class="md:hidden text-gray-600 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden bg-white hidden text-center">
+      <a href="#" class="block py-2 px-4">Galeria zdjęć</a>
+      <a href="#" class="block py-2 px-4">FAQ</a>
+    </div>
+    <div class="container mx-auto px-4 py-4 lg:pt-24 lg:pb-64">
+      <h2 class="text-7xl	bebas-neue-regular">Sprzedajemy samochody <br class="hidden lg:inline">z europy</h2>
+      <h3 class="roboto-condensed mt-7 mb-10">Kup komfortowy pojazd, aby każda podróż <br class="hidden lg:inline">była wyjątkowym przeżyciem.</h3>
+      <img src="images/img-1.jpg" class="mb-5 md:hidden" alt="car 1">
+      <a href="#" class="border border-blue-600 bg-blue-700 hover:bg-blue-600 text-white py-3 px-5 rounded-lg mb-3 md:mb-0 md:mr-4 font-semibold block md:inline-block">Zobacz zdjęcia</a>
+      <a href="#" class="border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white py-3 px-5 rounded-lg block md:inline-block">Zadzwoń do nas</a>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-4 lg:py-32 overflow-hidden">
+    <h5 class="roboto-condensed mb-2 text-blue-600 text-xl">Prezentacja firmy</h5>
+    <h3 class="text-4xl	bebas-neue-regular">Zobacz naszą Galerię zdjęć</h3>
+    
+
+    <div id="tabs" class="bg-transparent mt-6">
+      <ul class="bg-transparent border-0">
+        <li><a href="#tabs-1" class="bg-white text-black">Samochody osobowe</a></li>
+        <li><a href="#tabs-2" class="bg-white text-black">Samochody dostawcze</a></li>
+      </ul>
+      <div id="tabs-1" class="tab-item">
+        <div class="slider-1">
+          <div>
+            <img src="images/img-1.jpg" class="slider-1__img" alt="car">
+          </div>
+          <div>
+            <img src="images/img-2.jpg" class="slider-1__img" alt="car">
+          </div>
+          <div>
+            <img src="images/img-3.jpg" class="slider-1__img" alt="car">
+          </div>
+        </div>
+      </div>
+      <div id="tabs-2" class="tab-item">
+        <p>Tutaj można wstawić na przyklad drugi slider albo coś innego.</p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="px-4 py-4 lg:py-32 text-white footer">
+    <div class="container mx-auto grid md:grid-cols-2 gap-5">
+      <div class="mb-12 md:mb-0">
+        <h3 class="text-2xl	bebas-neue-regular mb-5">ID NOSTRUD ENIM ESSE CONSECTETUR IN EU MOLLIT FUGIAT AUTE. VELIT NULLA COMMODO.</h3>
+        <p>Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et  [...]</p>
+        <div class="pt-3 hidden excerpt">
+          <p>Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et  [...]</p>
+        </div>
+        <a href="#" class="mt-10 inline-block roboto-condensed text-sm border-b pb-2 excerpt-btn">Rozwiń</a>
+      </div>
+      <div class="mb-12 md:mb-0">
+        <h3 class="text-2xl	bebas-neue-regular mb-5">ID NOSTRUD ENIM ESSE CONSECTETUR IN EU MOLLIT FUGIAT AUTE. VELIT NULLA COMMODO.</h3>
+        <p>Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et  [...]</p>
+        <div class="pt-3 hidden excerpt">
+          <p>Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et  [...]</p>
+        </div>
+        <a href="#" class="mt-10 inline-block roboto-condensed text-sm border-b pb-2 excerpt-btn">Rozwiń</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="border-t text-white roboto-condensed py-5 copyright">
+    <div class="container mx-auto text-center md:text-left md:flex">
+      <span class="font-semibold block">Cars Spot</span>
+      <a href="#" class="underline md:ml-auto block">Polityka prywatności</a>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+
+</html>
