@@ -108,6 +108,21 @@ body {
   }
 }
 
+.excerpt-btn {
+  &::after {
+    content: url('../images/arrow.svg');
+    margin: 4px;
+    display: inline-block;
+    line-height: 0;
+  }
+
+  &--open {
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+}
+
 .footer,
 .copyright {
   background-color: $black;
